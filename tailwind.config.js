@@ -8,7 +8,14 @@ module.exports = {
     extend: {
       gridRow: {
         'span-10': 'span 10 / span 10',
-      }
+      },
+      backgroundImage: {
+        'fenway': "url('../public/Fenway.jpg')",
+        'stairs': "url('../public/stairs.jpg')",
+        'mountains': "url('../public/moutains.jpeg')",
+        'nyc': "url('../public/NYC.jpg')",
+        'bg': "url('../public/bg.jpg')",
+      },
     },
   },
   plugins: [],

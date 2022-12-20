@@ -5,6 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&family=Playfair+Display:wght@700&display=swap');
 
+* {
+  color: black; 
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;

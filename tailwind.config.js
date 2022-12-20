@@ -7,15 +7,21 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '128': '54rem',
+        '675': '42rem',
+        'proj': '66rem',
       },
       height: {
-        '128': '54rem',
+        '175': '10rem',
+        '460': '28.75rem',
+        'proj': '32rem',
       },
       colors: {
         background: '#0B0D0E',
         secondary: '#374148',
         primary: '#8394A0',
+      },
+      boxShadow: {
+        'sec': '10px 10px 4px rgb(55, 65, 72, 0.35)',
       },
     },
   },

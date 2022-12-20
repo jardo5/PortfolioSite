@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&family=Playfair+Display:wght@700&display=swap');
 
 h1 {
-  font-family: 'JetBrains Mono', serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Judson', serif;
 }

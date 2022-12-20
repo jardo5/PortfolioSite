@@ -6,8 +6,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      gridRow: {
-        'span-10': 'span 10 / span 10',
+      width: {
+        '128': '54rem',
+      },
+      height: {
+        '128': '54rem',
+      },
+      colors: {
+        background: '#0B0D0E',
+        secondary: '#374148',
+        primary: '#8394A0',
       },
     },
   },

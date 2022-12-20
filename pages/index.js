@@ -19,11 +19,13 @@ import Linux from "../public//skills/linux.svg";
 import MongoDB from "../public//skills/mongodb.svg";
 import FireBase from "../public//skills/firebase.svg";
 import MySQL from "../public//skills/mysql.svg";
+import NextJS from "../public//skills/nextjs.svg";
+import JQuery from "../public//skills/jquery.svg";
 
 
 export default function Home() {
   return (
-    <div id="bg" className="bg-background h-screen w-screen flex flex justify-center p-12">
+    <div id="bg" className="bg-background h-screen w-screen flex justify-center p-12">
       <div className="flex w-screen  gap-10 justify-center fade-in-5 duration-1000">
       <div className="flex flex-col gap-4  ">
         {/*Left (Welcome, Intro, Skills)*/}
@@ -37,36 +39,84 @@ export default function Home() {
           <h1 className="">Intro</h1>
         </div>
 
-        <div id="skills" className="w-675 bg-primary flex-1 flex-col gap-6 flex items-center p-5 rounded-2xl shadow-sec animate-in ease-in fade-in-0 slide-in-from-left-96 duration-700">
-          <h1 className="">Skills</h1>
-          <div className="float-left flex items-center gap-3 p-2 w-fit h-full">
+        <div id="skills" className="w-675 bg-primary flex-1 flex-col gap-6 flex rounded-2xl shadow-sec animate-in ease-in fade-in-0 slide-in-from-left-96 duration-700">
+          <h1 className="flex justify-center">Skills</h1>
+          <div className="float-left flex items-center gap-3 p-2">
             <h2>Languages:</h2>
-
+            
+            <div className="tooltip" data-tip="JavaScript">
             <Image src={JavaScript} alt="JavaScript" height={50} width={50} className=""></Image> 
+            </div>
+
+            <div className="tooltip" data-tip="TypeScript">
             <Image src={TypeScript} alt="TypeScript" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="HTML">
             <Image src={HTML} alt="HTML5" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="CSS">
             <Image src={CSS} alt="CSS3" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="Java/JavaFX">
             <Image src={Java} alt="Java" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="C++">
             <Image src={CPP} alt="C++" height={50} width={50} className=""></Image>
+            </div>
             
 
           </div>
-          <div className="float-left w-full flex items-center gap-3 p-2">
+          <div className="float-left w-full flex items-center gap-3 p-2 ">
             <h2>Frameworks/Libraries:</h2>
 
-            <Image src={Tailwind} alt="TailwindCSS" height={50} width={50} className=""></Image>
+            <div className="tooltip" data-tip="React">
             <Image src={ReactSVG} alt="React" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="NextJS">
+            <Image src={NextJS} alt="NextJS" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="JQuery">
+            <Image src={JQuery} alt="JQuery" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="TailwindCSS">
+            <Image src={Tailwind} alt="TailwindCSS" height={50} width={50} className=""></Image>
+            </div>
 
 
           </div>
           <div className="float-left w-full flex items-center gap-3 p-2">
             <h2>Tools:</h2>
+
+            <div className="tooltip" data-tip="Git">
             <Image src={Git} alt="Git" height={50} width={50} className=""></Image>
-            <Image src={Node} alt="NodeJS" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="Node">
+            <Image src={Node} alt="Node" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="Linux">
             <Image src={Linux} alt="Linux" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="MongoDB">
             <Image src={MongoDB} alt="MongoDB" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="MySQL">
             <Image src={MySQL} alt="MySQL" height={50} width={50} className=""></Image>
+            </div>
+
+            <div className="tooltip" data-tip="Firebase">
             <Image src={FireBase} alt="FireBase" height={50} width={50} className=""></Image>
+            </div>
 
           </div>
 

@@ -6,15 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&family=Playfair+Display:wght@700&display=swap');
 
 
-projects {
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -30,11 +21,4 @@ p {
   font-family: 'Judson', serif;
   font-size: medium;
   font-weight: bold;
-}
-
-#skimg {
-  width: 75px;
-  height: 75px;
-  display: inline-block;
-  overflow: hidden;
 }

@@ -29,283 +29,194 @@ import JQuery from "../public/skills/jquery.png";
 
 export default function Home() {
   return (
-    <div className="bg-background text-black flex justify-center p-14 2xl:flex-wrap">
-      <div className="flex gap-10 justify-center fade-in-5 duration-1000 2xl:flex-col">
-        <div className="flex flex-col gap-4 items-center">
-          {/*Left (Welcome, Intro, Skills)*/}
+    <div className="text-black">
+      <div className="bg-background flex flex-col h-auto w-screen lg:flex-row">
+        {/*Left (Welcome, Intro, Skills)*/}
+        <div className="flex-col flex gap-4 p-4 h-screen lg:w-1/2">
 
-          <div
-            id="welcome"
-            className="h-175 w-675 bg-primary flex justify-center p-5 rounded-2xl shadow-sec items-center animate-in ease-in fade-in-0 slide-in-from-left-96 duration-300 2xl:w-screen"
-          >
-            <h1 className="font-extrabold text-8xl">Welcome!</h1>
+          <div className="items-center flex-col flex bg-primary rounded-2xl p-4" id="welcome">
+            <h1>Welcome!</h1>
           </div>
 
-          <div
-            id="intro"
-            className=" gap-6 h-80 w-675 bg-primary flex flex-col text-center items-center p-5 rounded-2xl shadow-sec animate-in ease-in fade-in-0 slide-in-from-left-96 duration-500 2xl:w-screen break-before-all"
-          >
+          <div className="items-center flex-col flex text-center gap-4 bg-primary rounded-2xl p-4" id="intro">
             <Image
-              className="border-black border-2 rounded-full"
               src={PFP}
               alt="Profile Picture"
               height={150}
               width={150}
             ></Image>
-            <p className="">Hello! My name is Jarod. I am currently a student at WGU studying Software Development, 
-            with hopes of transferring from being a Fiber Optic Technician to a Software Engineer! <br />
-             I'm a hard working, problem solving, dedicated, person. Check out my resume or some of my projects.</p>
+            <p>
+              Hello! My name is Jarod. I am currently a student at WGU studying
+              Software Development, with hopes of transferring from being a
+              Fiber Optic Technician to a Software Engineer!
+              I'm a hard working, problem solving, dedicated, person. Check out
+              my resume or some of my projects.
+            </p>
           </div>
 
-          <div
-            id="skills"
-            className="w-675 bg-primary flex-col gap-6 flex rounded-2xl shadow-sec animate-in ease-in item-center fade-in-0 slide-in-from-left-96 duration-700 2xl:w-screen">
+          <div className="items-center flex-col flex bg-primary rounded-2xl p-4 h-screen" id="skills">
+            <h1>Skills</h1>
+            <h2>Languages:</h2>
+            <div className="flex flex-row items-center gap-4">
 
-            <h1 className="flex justify-center">Skills</h1>
-            <div className="float-left flex items-center gap-3 p-2 ">
-              <h2>Languages:</h2>
-
-              <div className="tooltip" data-tip="JavaScript">
+              <div data-tip="JavaScript">
                 <Image
                   src={JavaScript}
                   alt="JavaScript"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
 
-              <div className="tooltip" data-tip="TypeScript">
+              <div data-tip="TypeScript">
                 <Image
                   src={TypeScript}
                   alt="TypeScript"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
 
-              <div className="tooltip" data-tip="HTML">
-                <Image
-                  src={HTML}
-                  alt="HTML5"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="HTML">
+                <Image src={HTML} alt="HTML5" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="CSS">
-                <Image
-                  src={CSS}
-                  alt="CSS3"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="CSS">
+                <Image src={CSS} alt="CSS3" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="C++">
-                <Image
-                  src={CPP}
-                  alt="C++"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="C++">
+                <Image src={CPP} alt="C++" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="Java/JavaFX">
-                <Image
-                  src={Java}
-                  alt="Java"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="Java/JavaFX">
+                <Image src={Java} alt="Java" width={50} height={50}></Image>
               </div>
+
             </div>
-            <div className="float-left w-full flex items-center gap-3 p-2">
-              <h2>Frameworks/Libraries:</h2>
+            <h2>Frameworks/Libraries:</h2>
+            <div className="flex flex-row items-center gap-4">
 
-              <div className="tooltip" data-tip="React">
+              <div data-tip="React">
                 <Image
                   src={ReactSVG}
                   alt="React"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
 
-              <div className="tooltip" data-tip="NextJS">
+              <div data-tip="NextJS">
                 <Image
                   src={NextJSSVG}
                   alt="NextJS"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
 
-              <div className="tooltip" data-tip="JQuery">
-                <Image
-                  src={JQuery}
-                  alt="JQuery"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="JQuery">
+                <Image src={JQuery} alt="JQuery" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="TailwindCSS">
+              <div data-tip="TailwindCSS">
                 <Image
                   src={Tailwind}
                   alt="TailwindCSS"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
             </div>
-            <div className="float-left w-full flex items-center gap-3 p-2 relative">
-              <h2>Tools:</h2>
+            <h2>Tools:</h2>
+            <div className="flex flex-row items-center gap-4">
 
-              <div className="tooltip" data-tip="Git">
-                <Image
-                  src={Git}
-                  alt="Git"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="Git">
+                <Image src={Git} alt="Git" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="Node">
-                <Image
-                  src={Node}
-                  alt="Node"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="Node">
+                <Image src={Node} alt="Node" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="Linux">
-                <Image
-                  src={Linux}
-                  alt="Linux"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="Linux">
+                <Image src={Linux} alt="Linux" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="MongoDB">
+              <div data-tip="MongoDB">
                 <Image
                   src={MongoDB}
                   alt="MongoDB"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
 
-              <div className="tooltip" data-tip="MySQL">
-                <Image
-                  src={MySQL}
-                  alt="MySQL"
-                  width={50}
-                  height={50}
-                  className=""
-                ></Image>
+              <div data-tip="MySQL">
+                <Image src={MySQL} alt="MySQL" width={50} height={50}></Image>
               </div>
 
-              <div className="tooltip" data-tip="Firebase">
+              <div data-tip="Firebase">
                 <Image
                   src={FireBase}
                   alt="FireBase"
                   width={50}
                   height={50}
-                  className=""
                 ></Image>
               </div>
             </div>
           </div>
+          
         </div>
-        <div className="flex-col h-screen w-full flex items-center gap-8">
-          <div
-            id="see-all"
-            className="h-175 w-675 bg-primary flex justify-center items-center p-5 rounded-2xl shadow-sec animate-in ease-in fade-in-0 slide-in-from-top-96 duration-1000 2xl:w-screen"
-          >
-            <div className="tooltip tooltip-warning" data-tip="W.I.P">
-            <button className="btn flex">Resume</button>
+        {/*Right (Resume, Projects, Socials)*/}
+        <div className="flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen" id="resume/proj/socials">
+          <div className="flex-col flex" id="resume">
+            <div className="items-center flex-col flex p-4 bg-primary rounded-2xl" data-tip="W.I.P">
+              <button>Resume</button>
             </div>
           </div>
 
-          <div id="projects" className="flex justify-center items-center">
-            <div className="grid grid-cols-2 grid-rows-2 gap-6 w-proj lg:grid-cols-1 lg:grid-rows-1 2xl:w-full">
-              <div
-                id="project1"
-                className="h-56 rounded-2xl items-center justify-center flex bg-primary shadow-sec animate-in ease-in fade-in-0 slide-in-from-right-96 duration-300 2xl:w-screen"
-              >
-                1
-              </div>
-              <div
-                id="project2"
-                className="h-56 rounded-2xl items-center justify-center flex bg-primary shadow-sec animate-in ease-in fade-in-0 slide-in-from-right-96 duration-500 2xl:w-screen"
-              >
-                2
-              </div>
-              <div
-                id="project3"
-                className="h-56 rounded-2xl items-center justify-center flex bg-primary shadow-sec animate-in ease-in fade-in-0 slide-in-from-right-96 duration-700 2xl:w-screen"
-              >
-                3
-              </div>
-              <div
-                id="project4"
-                className="h-56 rounded-2xl items-center justify-center flex bg-primary shadow-sec animate-in ease-in fade-in-0 slide-in-from-right-96 duration-1000 2xl:w-screen"
-              >
-                4
-              </div>
+          <div className="flex-col flex" id="projects">
+            <div className="bg-primary rounded-2xl flex flex-wrap gap-12 p-4 justify-center">
+              <div className="flex items-center justify-center border h-32 w-32" id="project1">1</div>
+              <div className="flex items-center justify-center border h-32 w-32" id="project2">2</div>
+              <div className="flex items-center justify-center border h-32 w-32" id="project3">3</div>
+              <div className="flex items-center justify-center border h-32 w-32" id="project4">4</div>
             </div>
           </div>
 
-          <div
-            id="links"
-            className="w-proj bg-primary flex justify-between px-14 items-center rounded-2xl shadow-sec animate-in ease-in fade-in-0 slide-in-from-bottom-96 duration-1000 2xl:flex-col 2xl:gap-4 2xl:w-screen"
-          >
-            <h2>
-              <a
-                className="flex items-center delay-300 duration-700 hover:scale-110"
-                href="https://github.com/jardo5"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                {<Image src={Github} width={100} height={50} alt="Github" />}
-                github.com/jardo5
-              </a>
-            </h2>
+          <div className="flex-col flex"  id="links">
+            <div className="bg-primary rounded-2xl p-4 justify-around text-center flex flex-wrap lg:flex-row lg:justify-around">
+              <h1 className="h-fit w-full">Socials</h1>
+            <div className="flex">
+              <h2>
+                <a className="flex flex-col items-center text-sm"
+                  href="https://github.com/jardo5"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {<Image src={Github} width={100} height={50} alt="Github" />}
+                </a>
+              </h2>
 
-            <h2>
-              <a
-                className="flex items-center delay-300 duration-700 hover:scale-105"
-                href="https://www.linkedin.com/in/jarod-schupp/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                {
-                  <Image
-                    src={LinkedIn}
-                    width={100}
-                    height={100}
-                    alt="LinkedIn"
-                  />
-                }
-                linkedin.com/in/jarod-schupp/
-              </a>
-            </h2>
+              <h2>
+                <a className="flex flex-col items-center text-sm"
+                  href="https://www.linkedin.com/in/jarod-schupp/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {
+                    <Image
+                      src={LinkedIn}
+                      width={100}
+                      height={100}
+                      alt="LinkedIn"
+                    />
+                  }
+                </a>
+              </h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>

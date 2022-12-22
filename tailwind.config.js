@@ -4,6 +4,31 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+      daisyui: {
+        themes: [
+          {
+            mytheme: {
+            
+    "primary": "#d16b1d",
+            
+    "secondary": "#54d3a2",
+            
+    "accent": "#0338bc",
+            
+    "neutral": "#374148",
+            
+    "base-100": "#374148",
+            
+    "info": "#73C3D9",
+            
+    "success": "#23D7C5",
+            
+    "warning": "#EBA94C",
+            
+            },
+          },
+        ],
+      },
   theme: {
     extend: {
       width: {

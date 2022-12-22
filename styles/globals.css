@@ -5,9 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&family=Playfair+Display:wght@700&display=swap');
 
-* {
-  color: black; 
-}
+
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -21,4 +19,11 @@ h2 {
 
 p {
   font-family: 'Judson', serif;
+}
+
+#skimg {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  overflow: hidden;
 }

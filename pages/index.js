@@ -35,7 +35,6 @@ export default function Home () {
         <title>Jarod Schupp Portfolio Site</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content='Personal portfolio website' />
-        <link rel='icon' href={Favicon} />
       </Head>
       <div className='text-black'>
         <div className='bg-background flex flex-col gap-12 h-auto w-screen lg:flex-row'>

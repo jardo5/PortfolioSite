@@ -1,5 +1,6 @@
 import Image from "next/image.js";
 import React from "react";
+import Head from "next/head";
 
 {
   /* Photos */
@@ -29,6 +30,10 @@ import JQuery from "../public/skills/jquery.png";
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>Jarod Schupp</title>
+    </Head>
     <div className="text-black">
       <div className="bg-background flex flex-col h-auto w-screen lg:flex-row">
         {/*Left (Welcome, Intro, Skills)*/}
@@ -170,23 +175,23 @@ export default function Home() {
         </div>
         {/*Right (Resume, Projects, Socials)*/}
         <div className="flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen" id="resume/proj/socials">
-          <div className="flex-col flex" id="resume">
-            <div className="items-center flex-col flex p-4 bg-primary rounded-2xl" data-tip="W.I.P">
+          <div className="flex-col flex bg-primary rounded-2xl" id="resume">
+            <div className="items-center flex-col flex p-4" data-tip="W.I.P">
               <button>Resume</button>
             </div>
           </div>
 
-          <div className="flex-col flex" id="projects">
-            <div className="bg-primary rounded-2xl flex flex-wrap gap-12 p-4 justify-center">
-              <div className="flex items-center justify-center border h-32 w-32" id="project1">1</div>
-              <div className="flex items-center justify-center border h-32 w-32" id="project2">2</div>
-              <div className="flex items-center justify-center border h-32 w-32" id="project3">3</div>
-              <div className="flex items-center justify-center border h-32 w-32" id="project4">4</div>
+          <div className="flex-col flex bg-primary rounded-2xl h-auto basis-full" id="projects">
+            <div className="grid grid-cols-2 grid-rows-2 self-center h-full p-4 gap-4 lg:h-full lg:w-full">
+              <div className="flex items-center justify-center border h-36 w-36 lg:h-auto lg:w-auto" id="project1">1</div>
+              <div className="flex items-center justify-center border h-36 w-36 lg:h-auto lg:w-auto" id="project2">2</div>
+              <div className="flex items-center justify-center border h-36 w-36 lg:h-auto lg:w-auto" id="project3">3</div>
+              <div className="flex items-center justify-center border h-36 w-36 lg:h-auto lg:w-auto" id="project4">4</div>
             </div>
           </div>
 
-          <div className="flex-col flex"  id="links">
-            <div className="bg-primary rounded-2xl p-4 justify-around text-center flex flex-wrap lg:flex-row lg:justify-around">
+          <div className="flex-col flex bg-primary rounded-2xl"  id="links">
+            <div className=" p-4 justify-around text-center flex flex-wrap lg:flex-row">
               <h1 className="h-fit w-full">Socials</h1>
             <div className="flex">
               <h2>
@@ -221,5 +226,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }

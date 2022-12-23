@@ -229,7 +229,7 @@ export default function Home () {
 
             <div className='flex-col flex bg-primary rounded-2xl' id='links'>
               <div className=' p-4 justify-around text-center flex flex-wrap lg:flex-row'>
-                <h1 className='h-fit w-full'>Socials</h1>
+                <h1 className='h-fit w-full underline font-bold'>Socials</h1>
                 <div className='flex gap-12'>
                   <h2>
                     <a

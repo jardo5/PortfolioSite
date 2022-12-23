@@ -39,18 +39,18 @@ export default function Home () {
         <link rel='icon' href={Favicon} />
       </Head>
       <div className='text-black'>
-        <div className='bg-background flex flex-col h-auto w-screen lg:flex-row'>
+        <div className='bg-background flex flex-col gap-12 h-auto w-screen lg:flex-row'>
           {/*Left (Welcome, Intro, Skills)*/}
           <div className='flex-col flex gap-4 p-4 h-screen lg:w-1/2'>
             <div
-              className='items-center flex-col flex bg-primary rounded-2xl p-4 >'
+              className='items-center flex-col flex bg-primary rounded-2xl p-4 animate-in slide-in-from-left-full duration-1000 delay-100>'
               id='welcome'
             >
               <h1 className='underline'>Welcome!</h1>
             </div>
 
             <div
-              className='items-center flex-col flex text-center gap-4 bg-primary rounded-2xl p-4 lg:basis-full'
+              className='items-center flex-col flex text-center gap-4 bg-primary rounded-2xl p-4 animate-in slide-in-from-left-full duration-1000 delay-100 lg:basis-full '
               id='intro'
             >
               <Image
@@ -69,7 +69,7 @@ export default function Home () {
             </div>
 
             <div
-              className='items-center flex-col flex bg-primary rounded-2xl p-4 h-screen'
+              className='items-center flex-col flex bg-primary rounded-2xl p-4 h-screen animate-in slide-in-from-left-full duration-1000 delay-100'
               id='skills'
             >
               <h1 className='underline font-bold'>Skills</h1>
@@ -186,12 +186,12 @@ export default function Home () {
             </div>
           </div>
           {/*Right (Resume, Projects, Socials)*/}
-          <div className='flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen'
+          <div className='flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen animate-in slide-in-from-right-full duration-1000 delay-100'
             id='resume/proj/socials'
           >
             <div className='flex-col flex bg-primary rounded-2xl' id='resume'>
-              <div className='btn-primary rounded-2xl  items-center flex-col flex p-4 lg:p-8' data-tip='W.I.P'>
-                <button className='text-2xl font- underline'><ul />Resume (W.I.P)</button>
+              <div className='btn-primary rounded-2xl items-center flex-col flex p-4 lg:p-8' data-tip='W.I.P'>
+                <button className='text-2xl font-bold underline'><ul />Resume (W.I.P)</button>
               </div>
             </div>
 
@@ -230,7 +230,7 @@ export default function Home () {
             <div className='flex-col flex bg-primary rounded-2xl' id='links'>
               <div className=' p-4 justify-around text-center flex flex-wrap lg:flex-row'>
                 <h1 className='h-fit w-full underline font-bold'>Socials</h1>
-                <div className='flex gap-12'>
+                <div className='flex gap-12 lg:hover:scale-110 lg:hover:ease-in lg:hover:duration-500'>
                   <h2>
                     <a
                       className='flex flex-col items-center text-sm'

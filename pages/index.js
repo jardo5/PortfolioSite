@@ -1,7 +1,6 @@
 import Image from 'next/image.js'
 import React from 'react'
 import Head from 'next/head'
-import Favicon from '../public/favicon.ico'
 
 {
   /* Photos */

@@ -43,10 +43,10 @@ export default function Home () {
           {/*Left (Welcome, Intro, Skills)*/}
           <div className='flex-col flex gap-4 p-4 h-screen lg:w-1/2'>
             <div
-              className='items-center flex-col flex bg-primary rounded-2xl p-4'
+              className='items-center flex-col flex bg-primary rounded-2xl p-4 >'
               id='welcome'
             >
-              <h1>Welcome!</h1>
+              <h1 className='underline'>Welcome!</h1>
             </div>
 
             <div
@@ -59,11 +59,11 @@ export default function Home () {
                 height={150}
                 width={150}
               ></Image>
-              <p>
+              <p className='font-bold lg:text-2xl lg:leading-relaxed'>
                 Hello! My name is Jarod. I am currently a student at WGU
                 studying Software Development, with hopes of transferring from
                 being a Fiber Optic Technician to a Software Engineer! I'm a
-                hard working, problem solving, dedicated, person. Check out my
+                hard working person who genuinely loves solving problems. Check out my
                 resume or some of my projects.
               </p>
             </div>
@@ -72,8 +72,8 @@ export default function Home () {
               className='items-center flex-col flex bg-primary rounded-2xl p-4 h-screen'
               id='skills'
             >
-              <h1>Skills</h1>
-              <h2>Languages:</h2>
+              <h1 className='underline font-bold'>Skills</h1>
+              <h2 className='underline font-bold'>Languages:</h2>
               <div className='flex flex-row items-center gap-4'>
                 <div data-tip='JavaScript'>
                   <Image
@@ -109,7 +109,7 @@ export default function Home () {
                   <Image src={Java} alt='Java' width={75} height={75}></Image>
                 </div>
               </div>
-              <h2>Frameworks/Libraries:</h2>
+              <h2 className='underline font-bold'>Frameworks/Libraries:</h2>
               <div className='flex flex-row items-center gap-4'>
                 <div data-tip='React'>
                   <Image
@@ -147,7 +147,7 @@ export default function Home () {
                   ></Image>
                 </div>
               </div>
-              <h2>Tools:</h2>
+              <h2 className='underline font-bold'>Tools:</h2>
               <div className='flex flex-row items-center gap-4'>
                 <div data-tip='Git'>
                   <Image src={Git} alt='Git' width={75} height={75}></Image>
@@ -186,13 +186,12 @@ export default function Home () {
             </div>
           </div>
           {/*Right (Resume, Projects, Socials)*/}
-          <div
-            className='flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen'
+          <div className='flex-col flex gap-4 p-4 h-fit lg:w-1/2 lg:h-screen'
             id='resume/proj/socials'
           >
             <div className='flex-col flex bg-primary rounded-2xl' id='resume'>
-              <div className='items-center flex-col flex p-4' data-tip='W.I.P'>
-                <button>Resume</button>
+              <div className='btn-primary rounded-2xl  items-center flex-col flex p-4 lg:p-8' data-tip='W.I.P'>
+                <button className='text-2xl font- underline'><ul />Resume (W.I.P)</button>
               </div>
             </div>
 
@@ -231,7 +230,7 @@ export default function Home () {
             <div className='flex-col flex bg-primary rounded-2xl' id='links'>
               <div className=' p-4 justify-around text-center flex flex-wrap lg:flex-row'>
                 <h1 className='h-fit w-full'>Socials</h1>
-                <div className='flex'>
+                <div className='flex gap-12'>
                   <h2>
                     <a
                       className='flex flex-col items-center text-sm'

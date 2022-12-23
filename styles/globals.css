@@ -17,8 +17,12 @@ h2 {
   font-size: 1.5rem;
 }
 
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color:black;
+}
+
 p {
   font-family: 'Judson', serif;
-  font-size: medium;
-  font-weight: bold;
 }
